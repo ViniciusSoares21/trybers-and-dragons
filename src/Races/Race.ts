@@ -12,10 +12,8 @@ export default abstract class Race {
     return this._dexterity;
   }
 
-  static createdRacesInstances(value:unknown):number | void {
-    if (!value) {
-      throw new Error('Not implemented');
-    }
+  static createdRacesInstances():void {
+    throw new Error('Not implemented');
   }
 
   abstract get maxLifePoints():number;
