@@ -56,7 +56,7 @@ export default class Character implements Fighter {
     return this._archetype;
   }
 
-  attack(enemy: Fighter | SimpleFighter): void {
+  attack(enemy: SimpleFighter): void {
     enemy.receiveDamage(this._strength);
   }
 
